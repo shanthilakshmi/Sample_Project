@@ -1,4 +1,7 @@
 node {
+    Stage(checkout){
+     sh 'git clone https://github.com/shanthilakshmi/Sample_Project.git'
+    }
     stage('clean') {
         sh label: '', script: 'mvn clean'
     }
