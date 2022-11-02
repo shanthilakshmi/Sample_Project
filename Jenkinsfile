@@ -1,5 +1,5 @@
 node {
-    Stage('checkout'){
+    stage('checkout'){
      sh 'git clone https://github.com/shanthilakshmi/Sample_Project.git'
     }
     stage('clean') {
