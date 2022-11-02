@@ -1,4 +1,7 @@
 node {
+    stage('Clean Repo'){
+        sh 'rm -rf Sample_Project'
+    }
     stage('checkout'){
         sh 'git clone https://github.com/shanthilakshmi/Sample_Project.git'
     }
