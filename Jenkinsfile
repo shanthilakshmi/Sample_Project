@@ -14,7 +14,8 @@ node {
     stage('compile test package') {
         dir("Sample_Project")
             {
-                sh 'mvn install package'
+                sh 'mvn install'
+                sh 'mvn package'
             }
     }
 }
